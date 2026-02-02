@@ -110,9 +110,9 @@ const defaultData = {
     ],
     resumeUrl: '',
     socialLinks: {
-        linkedin: 'https://linkedin.com/in/ganeshram-sairam',
-        github: 'https://github.com/ganeshram-sairam',
-        email: 'ganeshram.sairam@example.com',
+        linkedin: 'https://www.linkedin.com/in/ganeshram-sairam-b88164190/',
+        github: 'https://github.com/GaneshramSairam',
+        email: 'ganeshramsairam1911@gmail.com',
     },
     clientLogos: [
         { id: '1', name: 'JK Fenner', domain: 'jkfenner.com' },
