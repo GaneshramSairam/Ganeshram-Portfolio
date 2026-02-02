@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" /> <!-- Amber-500 -->
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" /> <!-- Amber-600 -->
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="#1E3A8A" stroke="url(#grad1)" stroke-width="4" />
+  
+  <!-- Text -->
+  <text x="50" y="65" font-family="sans-serif" font-size="45" font-weight="bold" fill="white" text-anchor="middle">GS</text>
+  
+  <!-- Dot -->
+  <circle cx="82" cy="75" r="5" fill="url(#grad1)" />
+</svg>

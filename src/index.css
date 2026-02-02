@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans antialiased;
+  }
+  
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold 
+           transition-all duration-300 hover:bg-primary-600 
+           hover:shadow-lg hover:-translate-y-0.5
+           focus:outline-none focus-visible:ring-2 focus-visible:ring-accent;
+  }
+  
+  .btn-secondary {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-semibold 
+           transition-all duration-300 hover:bg-accent-500 
+           hover:shadow-lg hover:-translate-y-0.5
+           focus:outline-none focus-visible:ring-2 focus-visible:ring-primary;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold 
+           transition-all duration-300 hover:bg-primary hover:text-white 
+           hover:shadow-lg hover:-translate-y-0.5
+           focus:outline-none focus-visible:ring-2 focus-visible:ring-accent;
+  }
+  
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold text-primary mb-4;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 
+           transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .badge {
+    @apply inline-block px-3 py-1 text-sm font-medium rounded-full;
+  }
+  
+  .badge-primary {
+    @apply bg-primary-100 text-primary-700;
+  }
+  
+  .badge-accent {
+    @apply bg-accent-100 text-accent-700;
+  }
+  
+  .skill-pill {
+    @apply inline-block px-4 py-2 bg-primary-50 text-primary-700 
+           rounded-full text-sm font-medium mr-2 mb-2
+           transition-all duration-300 hover:bg-primary hover:text-white;
+  }
+}
+
+@layer utilities {
+  .gradient-bg {
+    background: linear-gradient(135deg, #1E3A8A 0%, #3B5998 50%, #1E3A8A 100%);
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+}
+
+/* Skip to content link for accessibility */
+.skip-link {
+  @apply absolute -top-10 left-0 bg-primary text-white px-4 py-2 z-50
+         focus:top-0 transition-all;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-400;
+}
